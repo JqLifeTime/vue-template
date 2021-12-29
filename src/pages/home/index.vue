@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p class="home">我是<span>home</span>页</p>
+		<p class="home">我是<span>{{home}}</span>页</p>
 		<span class="iconfont icon-shouye"></span>
 		<span class="iconfont icon-leimupinleifenleileibie"></span>
 		<span class="iconfont icon-gouwuchekong"></span>
@@ -9,6 +9,13 @@
 </template>
 
 <script>
+	export default {
+		data() {
+			return {
+				home: '首页'
+			}
+		}
+	}
 </script>
 
 <style lang="scss" scoped>
